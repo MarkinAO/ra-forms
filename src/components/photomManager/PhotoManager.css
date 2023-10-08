@@ -1,0 +1,88 @@
+.phm-container {
+    min-height: 600px;
+    padding-bottom: 45px;
+    border-radius: 10px 10px 0 0;    
+    background-image: url('../../assets/notepad.png');
+    background-repeat: repeat;
+    font-size: 22px;
+}
+
+.decor-panel {
+    padding: 10px 20px;
+    text-align: left;
+    background-color: lightgrey;
+    border-radius: 10px 10px 0 0;
+}
+
+.cercle {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.inputfile {
+    z-index: -1;
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.inputfile + label {
+    display: block;
+    width: 80%;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;    
+}
+
+.preview-box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;    
+    border: 1px solid black;    
+}
+
+.preview {
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.preview-img {
+    min-height: 250px;
+    min-width: 250px;
+}
+
+.preview-cross {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}

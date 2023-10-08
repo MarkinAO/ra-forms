@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    min-height: 600px;
+    font-size: 20px;
+}
+
+.stepsForm {
+    display: flex;    
+    gap: 10px;
+    align-items: end;
+    margin: 0 auto;
+}
+
+.stepsInput {
+    height: 45px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.stepsButton {
+    padding: 0 20px;    
+}
+
+.error {
+    color: red;
+    border: 3px solid red;
+}
+
+.complete {
+    color: #00a000;
+    border: 3px solid #00a000;
+}
+
+.complete:focus-visible,
+.error:focus-visible {
+    outline: none;
+}
+
+.list-container {
+    margin: 0 auto;
+}
+
+.list-title {
+    display: flex;
+    gap: 70px;
+    padding: 0 45px;
+}
+
+.list-box {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.item-button {
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.item-button:hover {
+    cursor: pointer;
+}
+
+.item-button_edit {
+    background-image: url(./assets/edit.svg);
+}
+
+.item-button_delete {
+    background-image: url(./assets/trash.svg);
+}
